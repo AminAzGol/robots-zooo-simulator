@@ -17,12 +17,11 @@ try to run away from the red attacker
 examples:
 
 
-`
- 0,0,500 //left wheel turns forward with 500 speed
+
+ `0,0,500 //left wheel turns forward with 500 speed`
  
- 1,0,600 //right wheel turns forward with 600 speed
+ `1,0,600 //right wheel turns forward with 600 speed`
  
- 0,1,500 //left wheel turns backward with 500 speed
-`
+ `0,1,500 //left wheel turns backward with 500 speed`
 
 speed range: 0~1000
