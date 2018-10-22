@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto 0 auto;
+
+        }
+
+        .middleDiv {
+            display: block;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto 0 auto;
+
+        }
+
+        @keyframes color-pulsate {
+            0% {
+                -webkit-filter: hue-rotate(0deg) saturate(20%)
+            }
+            50% {
+                -webkit-filter: hue-rotate(3600deg) saturate(150%)
+            }
+            100% {
+                -webkit-filter: hue-rotate(0deg) saturate(20%)
+            }
+        }
+
+        #icon {
+            /* background-image: url(http://cdn1.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/128/iSync.png ); */
+            animation: color-pulsate 25s infinite linear;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="icon" style="text-align:center; font-size: 30px">
+        Robots Zoo Simulator
+    </div>
+    <div style="margin-left: 300px">
+        <button id="restart">restart</button>
+        <button id="stop">stop</button>
+        <button id="resume">resume</button>
+    </div>
+    <canvas></canvas>
+    <!-- <script src="include/jquery.min.js"></script> -->
+    <script src="./dependencies/socket.io.dev.js"></script>
+    <script src="canvas.js"></script>
+    <script src="socket.js"></script> 
+    <script src="attacker_ai.js"></script>
+    <script>
+        document.getElementById('restart').onclick = restart;
+        document.getElementById('stop').onclick = stop;
+        document.getElementById('resume').onclick = resume;
+
+
+    </script>
+</body>
+
+</html>
