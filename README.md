@@ -7,11 +7,16 @@ try to run away from the red attacker
  node app
  
  then connect it throw the tcp port `26881`
+ 
  and it will send u the position of the robots then you sould drive it with a string like this:
- `
+
+`
  <left_or_right_Wheel>, <forward_or_backward>, <speed>
  `
+ 
 examples:
+
+
 `
  0,0,500 //left wheel turns forward with 500 speed
  1,0,600 //right wheel turns forward with 600 speed
